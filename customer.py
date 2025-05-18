@@ -1,8 +1,10 @@
 from order import Order
 
 class Customer:
+    all_customers = []
     def __init__(self,name):
         self.name = name
+        Customer.all_customers.append(self)
 
     @property
     def name(self):
